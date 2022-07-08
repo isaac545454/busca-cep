@@ -1,0 +1,82 @@
+.container{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: linear-gradient(#121212, #212b46);
+animation: Flip 2s;
+}
+.title{
+    font-size: 85px;
+    color: #fff;
+    animation: my 4s ;
+}
+.container-input{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px, 3px 8px (rgba(0, 0, 0, 0.5));
+}
+.container-input input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 9px ;
+}
+.container-input input::placeholder{
+    color: #f1f1f1;
+}
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5;
+}
+.buttonSearch:hover{
+    transform: scale(1.2);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(221, 221, 221);
+    width: 500px;
+    border-radius: 8px;
+}
+.main h2{
+   margin: 16px 0;
+   font-size: 39px;
+}
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+@media (max-width: 450px){
+    .title{
+        font-size: 34px;
+    }
+    .main{
+        width: 360px;
+    }
+    .main h2{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+@keyframes my{
+    from{transform: rotateX(90deg);}
+    to{ transform: rotateX(0deg);}
+}
